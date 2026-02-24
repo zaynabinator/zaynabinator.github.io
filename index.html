@@ -1,43 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaynab | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zaynab AQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <header>
-        <h1>Zaynab Abdulquddos</h1>
-        <p>Cybersecurity Engineering Student at George Mason University</p>
+  <nav class="nav">
+    <a class="logo" href="#top">Zaynab AQ</a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#photos">Photos</a>
+      <a href="#contact" class="btn">Contact</a>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero section reveal">
+      <div class="hero-text">
+        <p class="pill">Cybersecurity Engineering • GMU</p>
+        <h1>Hi, I’m <span class="accent">Zaynab</span> — I build secure, thoughtful tech.</h1>
+        <p class="sub">
+          I’m a cybersecurity engineering student focused on hands-on projects, labs, and building tools people actually use.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+
+        <div class="mini">
+          <div class="mini-item">
+            <span class="mini-title">Focus</span>
+            <span class="mini-text">Security • Systems • Coding</span>
+          </div>
+          <div class="mini-item">
+            <span class="mini-title">Tools</span>
+            <span class="mini-text">Python • C • Linux • Git</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="photo-frame">
+          <img src="images/headshot.jpg" alt="Portrait of Zaynab" />
+        </div>
+        <div class="card-glow"></div>
+      </div>
     </header>
 
-    <section class="about">
-        <h2>About Me</h2>
-        <p>
-            Hi! I am a Cybersecurity Engineering student passionate about security, 
-            technology, and building impactful technical projects. I enjoy working 
-            on coding projects, cybersecurity labs, and design-based engineering work.
-        </p>
+    <section id="about" class="section reveal">
+      <h2 class="title">About</h2>
+      <p class="lead">
+        I’m a student who loves turning messy problems into clean systems — from labs and vulnerability exercises to building real projects.
+        I care about clarity, good design, and security fundamentals.
+      </p>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>What I’m into</h3>
+          <p>Threat thinking, secure coding, and building tools that help people.</p>
+        </div>
+        <div class="card">
+          <h3>What I’m learning</h3>
+          <p>Security workflows, Linux internals, and writing cleaner code with Git.</p>
+        </div>
+        <div class="card">
+          <h3>What I value</h3>
+          <p>Practical work, clear communication, and staying curious.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Smart Grip Trainer (Arduino Project)</li>
-            <li>DeskTask To-Do List Application</li>
-            <li>Voiceflow AI Chatbot</li>
-            <li>Cybersecurity Labs (SEED VM, Cyber Range)</li>
-        </ul>
+    <section id="projects" class="section reveal">
+      <div class="section-head">
+        <h2 class="title">Projects</h2>
+        <p class="muted">A few things I’ve built (or I’m building).</p>
+      </div>
+
+      <div class="projects">
+        <a class="project-card" href="#" target="_blank" rel="noreferrer">
+          <div class="project-top">
+            <span class="tag">Hardware + Embedded</span>
+            <h3>Smart Grip Trainer</h3>
+            <p>Arduino-based trainer with sensors + feedback for tracking grip strength.</p>
+          </div>
+          <div class="project-meta">
+            <span>Arduino • Sensors • OLED</span>
+            <span class="arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="#" target="_blank" rel="noreferrer">
+          <div class="project-top">
+            <span class="tag">Python App</span>
+            <h3>DeskTask</h3>
+            <p>A clean to-do GUI with saving/loading and simple OOP structure.</p>
+          </div>
+          <div class="project-meta">
+            <span>Python • JSON • UI</span>
+            <span class="arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="#" target="_blank" rel="noreferrer">
+          <div class="project-top">
+            <span class="tag">Conversational AI</span>
+            <h3>Voiceflow Chatbot</h3>
+            <p>Structured flows and user personas for an addiction-support navigation tool.</p>
+          </div>
+          <div class="project-meta">
+            <span>Voiceflow • UX • Writing</span>
+            <span class="arrow">↗</span>
+          </div>
+        </a>
+      </div>
     </section>
 
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Email: your-email@example.com</p>
-        <p>GitHub: github.com/yourusername</p>
-        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    <section id="photos" class="section reveal">
+      <div class="section-head">
+        <h2 class="title">Photos</h2>
+        <p class="muted">A few snapshots—projects, events, or moments I’m proud of.</p>
+      </div>
+
+      <div class="gallery">
+        <img src="images/project1.png" alt="Project photo 1">
+        <img src="images/project2.png" alt="Project photo 2">
+        <img src="images/project3.png" alt="Project photo 3">
+      </div>
+      <p class="hint">Tip: keep images bright, high-quality, and consistent.</p>
     </section>
 
+    <section id="contact" class="section reveal">
+      <h2 class="title">Contact</h2>
+      <div class="contact-card">
+        <p class="lead">Want to connect? I’m open to internships, research, and project collaborations.</p>
+        <div class="contact-links">
+          <a class="btn" href="mailto:youremail@example.com">Email me</a>
+          <a class="btn ghost" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn ghost" href="#" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Zaynab AQ</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
